@@ -26,6 +26,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="LSv-BX-HIO" kind="show" id="1gj-34-KvS"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -51,7 +54,7 @@
         <!--Jokes View Controller-->
         <scene sceneID="jvl-Gl-vc6">
             <objects>
-                <viewController title="Jokes View Controller" id="x7r-59-Dki" customClass="JokesViewController" customModule="UnitTestingLab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Jokes View Controller" id="x7r-59-Dki" customClass="JokesVC" customModule="UnitTestingLab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cL4-SG-q1S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,6 +70,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="fNw-X8-cAM" kind="show" id="YH9-8z-Eud"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -81,6 +87,9 @@
                         <viewLayoutGuide key="safeArea" id="WvY-Ie-xcb"/>
                     </view>
                     <navigationItem key="navigationItem" id="CfY-tn-Ra3"/>
+                    <connections>
+                        <outlet property="tableView" destination="94E-mJ-yeh" id="uXB-ZU-tCR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qI-sp-xc1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -124,6 +133,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Kch-s5-8eQ" kind="show" id="bon-g6-7Xs"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -199,6 +211,86 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xs3-QQ-1zU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1636" y="846"/>
+        </scene>
+        <!--Star WarsDVC-->
+        <scene sceneID="4fg-3p-Ecg">
+            <objects>
+                <viewController id="LSv-BX-HIO" customClass="StarWarsDVC" customModule="UnitTestingLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3pm-2j-Euj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StarWars Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6F-t4-tu5">
+                                <rect key="frame" x="10" y="138" width="394" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="21Q-UD-Wpo" firstAttribute="trailing" secondItem="g6F-t4-tu5" secondAttribute="trailing" constant="10" id="Y3E-S0-Wrq"/>
+                            <constraint firstItem="g6F-t4-tu5" firstAttribute="leading" secondItem="21Q-UD-Wpo" secondAttribute="leading" constant="10" id="b5J-Rf-9z5"/>
+                            <constraint firstItem="g6F-t4-tu5" firstAttribute="top" secondItem="21Q-UD-Wpo" secondAttribute="top" constant="50" id="iEX-q9-XlO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="21Q-UD-Wpo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tSV-ex-9xi"/>
+                    <connections>
+                        <outlet property="starWarsLabel" destination="g6F-t4-tu5" id="Yqo-dr-dlZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFr-3O-ACz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="59" y="110"/>
+        </scene>
+        <!--TriviaDVC-->
+        <scene sceneID="Hhw-Uv-fl0">
+            <objects>
+                <viewController id="Kch-s5-8eQ" customClass="TriviaDVC" customModule="UnitTestingLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aT9-XQ-Ocw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ZDm-Nl-bUI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="I8h-bh-ITg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JBc-oC-gEV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="846"/>
+        </scene>
+        <!--JokesDVC-->
+        <scene sceneID="rUC-Cu-HTU">
+            <objects>
+                <viewController id="fNw-X8-cAM" customClass="JokesDVC" customModule="UnitTestingLab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cyj-yk-QGK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWR-ez-lv3">
+                                <rect key="frame" x="10" y="138" width="394" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DyU-zk-BTC" firstAttribute="trailing" secondItem="WWR-ez-lv3" secondAttribute="trailing" constant="10" id="3hW-93-CEv"/>
+                            <constraint firstItem="WWR-ez-lv3" firstAttribute="top" secondItem="DyU-zk-BTC" secondAttribute="top" constant="50" id="7ka-o2-n1w"/>
+                            <constraint firstItem="WWR-ez-lv3" firstAttribute="leading" secondItem="DyU-zk-BTC" secondAttribute="leading" constant="10" id="bJH-Wa-cVp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DyU-zk-BTC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0yz-sS-bDH"/>
+                    <connections>
+                        <outlet property="jokesLabel" destination="WWR-ez-lv3" id="ShL-SJ-2rH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0iG-Sr-8d9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.971014492753625" y="-633.48214285714278"/>
         </scene>
     </scenes>
     <resources>

@@ -28,9 +28,9 @@ extension StarWarsData {
             let data = try Data.init(contentsOf: fileURL)
             let moviesData = try JSONDecoder().decode(StarWarsData.self, from: data)
             movieArr = moviesData.results
-    } catch {
-    fatalError("\(error)")
+        } catch {
+            fatalError("\(error)")
+        }
+        return movieArr
     }
-    return movieArr
-}
 }

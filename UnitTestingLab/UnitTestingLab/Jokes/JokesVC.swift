@@ -1,5 +1,5 @@
 //
-//  StarWarsVC.swift
+//  JokesVC.swift
 //  UnitTestingLab
 //
 //  Created by David Lin on 12/5/19.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class StarWarsVC: UIViewController {
+class JokesVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    var movies = [Movies]() {
+    var jokes = [AllJokes]() {
         didSet {
             tableView.reloadData()
         }
@@ -22,26 +22,25 @@ class StarWarsVC: UIViewController {
     }
     
     func loadData() {
-        movies = StarWarsData.getMovies()
+        jokes = AllJokes.getJokes()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let movie = segue.destination as? StarWarsDVC, let indexPath = tableView.indexPathForSelectedRow else {
+        guard let joke = segue.destination as? JokesDVC, let indexPath = tableView.indexPathForSelectedRow else {
             fatalError()
         }
-        movie.starWarsMovies = movies[indexPath.row]
+        joke.allJoke = jokes[indexPath.row]
     }
 }
 
-extension StarWarsVC: UITableViewDataSource {
-    
+extension JokesVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        movies.count
+        jokes.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath)
-        let user = movies[indexPath.row]
-        cell.textLabel?.text = user.title
+        let cell = tableView.dequeueReusableCell(withIdentifier: "jokesCell", for: indexPath)
+        let user = jokes[indexPath.row]
+        cell.textLabel?.text = user.setup
         return cell
     }
 }
