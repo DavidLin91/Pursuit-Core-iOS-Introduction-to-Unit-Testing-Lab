@@ -1,0 +1,123 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What%20is%20Solid%20Snake%27s%20real%20name%3F",
+            "correct_answer": "David",
+            "incorrect_answers": [
+                "Solid%20Snake",
+                "John",
+                "Huey"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Film",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which%201958%20movie%20starred%20Kirk%20Douglas%20and%20Tony%20Curtis%20as%20half-brothers%20Einar%20and%20Eric%3F",
+            "correct_answer": "The%20Vikings%20",
+            "incorrect_answers": [
+                "The%20Long%20Ships",
+                "Prince%20Valiant",
+                "Spartacus"
+            ]
+        },
+        {
+            "category": "General%20Knowledge",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What%20name%20represents%20the%20letter%20%22M%22%20in%20the%20NATO%20phonetic%20alphabet%3F",
+            "correct_answer": "Mike",
+            "incorrect_answers": [
+                "Matthew",
+                "Mark",
+                "Max"
+            ]
+        },
+        {
+            "category": "General%20Knowledge",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which%20language%20is%20NOT%20Indo-European%3F",
+            "correct_answer": "Hungarian",
+            "incorrect_answers": [
+                "Russian",
+                "Greek",
+                "Latvian"
+            ]
+        },
+        {
+            "category": "Vehicles",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Which%20of%20the%20following%20car%20manufacturers%20had%20a%20war%20named%20after%20it%3F",
+            "correct_answer": "Toyota",
+            "incorrect_answers": [
+                "Honda",
+                "Ford",
+                "Volkswagen"
+            ]
+        },
+        {
+            "category": "Politics",
+            "type": "boolean",
+            "difficulty": "hard",
+            "question": "Nazi%20Germany%20surrendered%20on%20Harry%20Truman%27s%20birthday%20while%20he%20was%20president.",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ]
+        },
+        {
+            "category": "Science%3A%20Computers",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "This%20mobile%20OS%20held%20the%20largest%20market%20share%20in%202012.",
+            "correct_answer": "iOS",
+            "incorrect_answers": [
+                "Android",
+                "BlackBerry",
+                "Symbian"
+            ]
+        },
+        {
+            "category": "History",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "What%20was%20the%20last%20colony%20the%20UK%20ceded%20marking%20the%20end%20of%20the%20British%20Empire%3F",
+            "correct_answer": "Hong%20Kong",
+            "incorrect_answers": [
+                "India",
+                "Australia",
+                "Ireland"
+            ]
+        },
+        {
+            "category": "Science%3A%20Gadgets",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "What%20round%20is%20a%20classic%20AK-47%20chambered%20in%3F",
+            "correct_answer": "7.62x39mm",
+            "incorrect_answers": [
+                "7.62x51mm",
+                "5.56x45mm",
+                "5.45x39mm"
+            ]
+        },
+        {
+            "category": "Mythology",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "What%20immense%20structure%20is%20referred%20to%20in%20Norse%20Mythology%20as%20the%20Yggdrasil.",
+            "correct_answer": "Tree",
+            "incorrect_answers": [
+                "Mountain",
+                "Temple",
+                "Castle"
+            ]
+        }
+    ]
+}
