@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6359405123A1981C001ED108 /* TriviaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6359405023A1981C001ED108 /* TriviaTest.swift */; };
+		6359405323A19ACA001ED108 /* JokesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6359405223A19ACA001ED108 /* JokesTest.swift */; };
 		6383625523998E70007ABBE7 /* StarWars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383625423998E70007ABBE7 /* StarWars.swift */; };
 		6383625723998EAD007ABBE7 /* Jokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383625623998EAD007ABBE7 /* Jokes.swift */; };
 		6383625923998EBB007ABBE7 /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383625823998EBB007ABBE7 /* Trivia.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6359405023A1981C001ED108 /* TriviaTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaTest.swift; sourceTree = "<group>"; };
+		6359405223A19ACA001ED108 /* JokesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesTest.swift; sourceTree = "<group>"; };
 		6383625423998E70007ABBE7 /* StarWars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWars.swift; sourceTree = "<group>"; };
 		6383625623998EAD007ABBE7 /* Jokes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jokes.swift; sourceTree = "<group>"; };
 		6383625823998EBB007ABBE7 /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				6399F20D2395BAF600475EEB /* UnitTestingLabTests.swift */,
+				6359405023A1981C001ED108 /* TriviaTest.swift */,
+				6359405223A19ACA001ED108 /* JokesTest.swift */,
 				6399F20F2395BAF600475EEB /* Info.plist */,
 			);
 			path = UnitTestingLabTests;
@@ -278,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6359405323A19ACA001ED108 /* JokesTest.swift in Sources */,
+				6359405123A1981C001ED108 /* TriviaTest.swift in Sources */,
 				6399F20E2395BAF600475EEB /* UnitTestingLabTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
